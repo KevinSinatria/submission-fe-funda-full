@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+  box-sizing: border-box;
+}
+
+#app {
+  display: flex;
+  align-content: center;
+  margin: 15px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.note-list-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-main {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.header-main > button {
+  background-color: #5d8736; /* Warna utama */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.header-main > button:hover {
+  background-color: #4a6d2b; /* Warna lebih gelap saat hover */
+  transform: scale(1.05);
+}
+
+.header-main > button:active {
+  transform: scale(0.95);
+}
+
+/* responsive untuk HP */
+@media only screen and (max-width: 480px) {
+  #app {
+    display: block;
+  }
+}

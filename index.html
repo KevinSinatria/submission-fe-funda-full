@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes-App</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <app-bar background-color="#5D8736" color="white"></app-bar>
+    </header>
+    <main>
+      <div class="header-main">
+        <button id="toggleArchiveBtn">Lihat Arsip</button>
+      </div>
+
+      <div id="app">
+        <note-form></note-form>
+
+        <div id="noteListContainer" class="note-list-container">
+          <note-list></note-list>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <footer-bar></footer-bar>
+    </footer>
+  </body>
+</html>
